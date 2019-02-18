@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Identicon</title>
+    <!-- ? CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ? VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app" class="ui segment">
+      <h3>My Identicon Generator</h3>
+      <div class="ui two column very relaxed grid">
+        <div class="column">
+          <b>Input:</b>
+          <input class="ui inverted input" v-on:input="onInput" />
+        </div>
+        <div>
+          <div class="identicon" v-html="identicon"></div>
+        </div>
+        <div class="ui vertical divider">Output</div>
+      </div>
+    </div>
+
+    <!-- ? js -->
+    <script src="https://cdn.rawgit.com/dmester/jdenticon/5bbdf8cb/dist/jdenticon.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

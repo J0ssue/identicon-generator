@@ -1,0 +1,13 @@
+#app {
+  width: 80%;
+  margin: 20vh auto;
+  text-align: center;
+}
+
+.identicon {
+  margin-left: 40px;
+}
+
+input {
+  margin-top: 60px;
+}
